@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		046B96DA2007F56800147DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B96D92007F56800147DD2 /* AppDelegate.swift */; };
-		046B96DC2007F56800147DD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B96DB2007F56800147DD2 /* ViewController.swift */; };
 		046B96DF2007F56800147DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046B96DD2007F56800147DD2 /* Main.storyboard */; };
 		046B96E12007F56800147DD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046B96E02007F56800147DD2 /* Assets.xcassets */; };
 		046B96E42007F56800147DD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046B96E22007F56800147DD2 /* LaunchScreen.storyboard */; };
 		046B96EF2007F56800147DD2 /* OmniLiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B96EE2007F56800147DD2 /* OmniLiftTests.swift */; };
 		046B96FA2007F56800147DD2 /* OmniLiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B96F92007F56800147DD2 /* OmniLiftUITests.swift */; };
+		0487D1CD20081E850018A33A /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D1CC20081E850018A33A /* HistoryViewController.swift */; };
+		0487D1CF20081EA00018A33A /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D1CE20081EA00018A33A /* WorkoutsViewController.swift */; };
+		0487D1D120081EF90018A33A /* CreateWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D1D020081EF90018A33A /* CreateWorkoutViewController.swift */; };
+		0487D1D320081F0A0018A33A /* LogWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D1D220081F0A0018A33A /* LogWorkoutViewController.swift */; };
+		0487D1D520081F190018A33A /* ViewWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D1D420081F190018A33A /* ViewWorkoutViewController.swift */; };
+		0487D1D720081FB60018A33A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D1D620081FB60018A33A /* LogInViewController.swift */; };
+		0487D1D9200820FA0018A33A /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D1D8200820FA0018A33A /* HistoryTableViewCell.swift */; };
+		0487D1DB2008211A0018A33A /* WorkoutsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D1DA2008211A0018A33A /* WorkoutsTableViewCell.swift */; };
+		0487D1DD2008213B0018A33A /* ViewWorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D1DC2008213B0018A33A /* ViewWorkoutTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,6 @@
 /* Begin PBXFileReference section */
 		046B96D62007F56800147DD2 /* OmniLift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmniLift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046B96D92007F56800147DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		046B96DB2007F56800147DD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		046B96DE2007F56800147DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		046B96E02007F56800147DD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046B96E32007F56800147DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +54,15 @@
 		046B96F52007F56800147DD2 /* OmniLiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmniLiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		046B96F92007F56800147DD2 /* OmniLiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmniLiftUITests.swift; sourceTree = "<group>"; };
 		046B96FB2007F56800147DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0487D1CC20081E850018A33A /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		0487D1CE20081EA00018A33A /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
+		0487D1D020081EF90018A33A /* CreateWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkoutViewController.swift; sourceTree = "<group>"; };
+		0487D1D220081F0A0018A33A /* LogWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogWorkoutViewController.swift; sourceTree = "<group>"; };
+		0487D1D420081F190018A33A /* ViewWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWorkoutViewController.swift; sourceTree = "<group>"; };
+		0487D1D620081FB60018A33A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		0487D1D8200820FA0018A33A /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		0487D1DA2008211A0018A33A /* WorkoutsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsTableViewCell.swift; sourceTree = "<group>"; };
+		0487D1DC2008213B0018A33A /* ViewWorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWorkoutTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +114,18 @@
 			isa = PBXGroup;
 			children = (
 				046B96D92007F56800147DD2 /* AppDelegate.swift */,
-				046B96DB2007F56800147DD2 /* ViewController.swift */,
+				0487D1D620081FB60018A33A /* LogInViewController.swift */,
+				0487D1CC20081E850018A33A /* HistoryViewController.swift */,
+				0487D1CE20081EA00018A33A /* WorkoutsViewController.swift */,
+				0487D1D020081EF90018A33A /* CreateWorkoutViewController.swift */,
+				0487D1D220081F0A0018A33A /* LogWorkoutViewController.swift */,
+				0487D1D420081F190018A33A /* ViewWorkoutViewController.swift */,
 				046B96DD2007F56800147DD2 /* Main.storyboard */,
 				046B96E02007F56800147DD2 /* Assets.xcassets */,
 				046B96E22007F56800147DD2 /* LaunchScreen.storyboard */,
+				0487D1D8200820FA0018A33A /* HistoryTableViewCell.swift */,
+				0487D1DA2008211A0018A33A /* WorkoutsTableViewCell.swift */,
+				0487D1DC2008213B0018A33A /* ViewWorkoutTableViewCell.swift */,
 				046B96E52007F56800147DD2 /* Info.plist */,
 			);
 			path = OmniLift;
@@ -259,8 +283,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046B96DC2007F56800147DD2 /* ViewController.swift in Sources */,
+				0487D1CF20081EA00018A33A /* WorkoutsViewController.swift in Sources */,
+				0487D1CD20081E850018A33A /* HistoryViewController.swift in Sources */,
+				0487D1DB2008211A0018A33A /* WorkoutsTableViewCell.swift in Sources */,
+				0487D1D9200820FA0018A33A /* HistoryTableViewCell.swift in Sources */,
+				0487D1D120081EF90018A33A /* CreateWorkoutViewController.swift in Sources */,
+				0487D1D720081FB60018A33A /* LogInViewController.swift in Sources */,
 				046B96DA2007F56800147DD2 /* AppDelegate.swift in Sources */,
+				0487D1D520081F190018A33A /* ViewWorkoutViewController.swift in Sources */,
+				0487D1DD2008213B0018A33A /* ViewWorkoutTableViewCell.swift in Sources */,
+				0487D1D320081F0A0018A33A /* LogWorkoutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
