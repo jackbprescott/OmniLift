@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		046B96DA2007F56800147DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B96D92007F56800147DD2 /* AppDelegate.swift */; };
+		046B96DC2007F56800147DD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B96DB2007F56800147DD2 /* ViewController.swift */; };
+		046B96DF2007F56800147DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046B96DD2007F56800147DD2 /* Main.storyboard */; };
+		046B96E12007F56800147DD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046B96E02007F56800147DD2 /* Assets.xcassets */; };
+		046B96E42007F56800147DD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046B96E22007F56800147DD2 /* LaunchScreen.storyboard */; };
+		046B96EF2007F56800147DD2 /* OmniLiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B96EE2007F56800147DD2 /* OmniLiftTests.swift */; };
+		046B96FA2007F56800147DD2 /* OmniLiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B96F92007F56800147DD2 /* OmniLiftUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		046B96EB2007F56800147DD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 046B96CE2007F56800147DD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 046B96D52007F56800147DD2;
+			remoteInfo = OmniLift;
+		};
+		046B96F62007F56800147DD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 046B96CE2007F56800147DD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 046B96D52007F56800147DD2;
+			remoteInfo = OmniLift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		046B96D62007F56800147DD2 /* OmniLift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmniLift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		046B96D92007F56800147DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		046B96DB2007F56800147DD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		046B96DE2007F56800147DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		046B96E02007F56800147DD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		046B96E32007F56800147DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		046B96E52007F56800147DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046B96EA2007F56800147DD2 /* OmniLiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmniLiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		046B96EE2007F56800147DD2 /* OmniLiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmniLiftTests.swift; sourceTree = "<group>"; };
+		046B96F02007F56800147DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046B96F52007F56800147DD2 /* OmniLiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmniLiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		046B96F92007F56800147DD2 /* OmniLiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmniLiftUITests.swift; sourceTree = "<group>"; };
+		046B96FB2007F56800147DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		046B96D32007F56800147DD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046B96E72007F56800147DD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046B96F22007F56800147DD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		046B96CD2007F56800147DD2 = {
+			isa = PBXGroup;
+			children = (
+				046B96D82007F56800147DD2 /* OmniLift */,
+				046B96ED2007F56800147DD2 /* OmniLiftTests */,
+				046B96F82007F56800147DD2 /* OmniLiftUITests */,
+				046B96D72007F56800147DD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		046B96D72007F56800147DD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				046B96D62007F56800147DD2 /* OmniLift.app */,
+				046B96EA2007F56800147DD2 /* OmniLiftTests.xctest */,
+				046B96F52007F56800147DD2 /* OmniLiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		046B96D82007F56800147DD2 /* OmniLift */ = {
+			isa = PBXGroup;
+			children = (
+				046B96D92007F56800147DD2 /* AppDelegate.swift */,
+				046B96DB2007F56800147DD2 /* ViewController.swift */,
+				046B96DD2007F56800147DD2 /* Main.storyboard */,
+				046B96E02007F56800147DD2 /* Assets.xcassets */,
+				046B96E22007F56800147DD2 /* LaunchScreen.storyboard */,
+				046B96E52007F56800147DD2 /* Info.plist */,
+			);
+			path = OmniLift;
+			sourceTree = "<group>";
+		};
+		046B96ED2007F56800147DD2 /* OmniLiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				046B96EE2007F56800147DD2 /* OmniLiftTests.swift */,
+				046B96F02007F56800147DD2 /* Info.plist */,
+			);
+			path = OmniLiftTests;
+			sourceTree = "<group>";
+		};
+		046B96F82007F56800147DD2 /* OmniLiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				046B96F92007F56800147DD2 /* OmniLiftUITests.swift */,
+				046B96FB2007F56800147DD2 /* Info.plist */,
+			);
+			path = OmniLiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		046B96D52007F56800147DD2 /* OmniLift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046B96FE2007F56800147DD2 /* Build configuration list for PBXNativeTarget "OmniLift" */;
+			buildPhases = (
+				046B96D22007F56800147DD2 /* Sources */,
+				046B96D32007F56800147DD2 /* Frameworks */,
+				046B96D42007F56800147DD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OmniLift;
+			productName = OmniLift;
+			productReference = 046B96D62007F56800147DD2 /* OmniLift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		046B96E92007F56800147DD2 /* OmniLiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046B97012007F56800147DD2 /* Build configuration list for PBXNativeTarget "OmniLiftTests" */;
+			buildPhases = (
+				046B96E62007F56800147DD2 /* Sources */,
+				046B96E72007F56800147DD2 /* Frameworks */,
+				046B96E82007F56800147DD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				046B96EC2007F56800147DD2 /* PBXTargetDependency */,
+			);
+			name = OmniLiftTests;
+			productName = OmniLiftTests;
+			productReference = 046B96EA2007F56800147DD2 /* OmniLiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		046B96F42007F56800147DD2 /* OmniLiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046B97042007F56800147DD2 /* Build configuration list for PBXNativeTarget "OmniLiftUITests" */;
+			buildPhases = (
+				046B96F12007F56800147DD2 /* Sources */,
+				046B96F22007F56800147DD2 /* Frameworks */,
+				046B96F32007F56800147DD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				046B96F72007F56800147DD2 /* PBXTargetDependency */,
+			);
+			name = OmniLiftUITests;
+			productName = OmniLiftUITests;
+			productReference = 046B96F52007F56800147DD2 /* OmniLiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		046B96CE2007F56800147DD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Something Clever";
+				TargetAttributes = {
+					046B96D52007F56800147DD2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					046B96E92007F56800147DD2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 046B96D52007F56800147DD2;
+					};
+					046B96F42007F56800147DD2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 046B96D52007F56800147DD2;
+					};
+				};
+			};
+			buildConfigurationList = 046B96D12007F56800147DD2 /* Build configuration list for PBXProject "OmniLift" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 046B96CD2007F56800147DD2;
+			productRefGroup = 046B96D72007F56800147DD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				046B96D52007F56800147DD2 /* OmniLift */,
+				046B96E92007F56800147DD2 /* OmniLiftTests */,
+				046B96F42007F56800147DD2 /* OmniLiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		046B96D42007F56800147DD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046B96E42007F56800147DD2 /* LaunchScreen.storyboard in Resources */,
+				046B96E12007F56800147DD2 /* Assets.xcassets in Resources */,
+				046B96DF2007F56800147DD2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046B96E82007F56800147DD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046B96F32007F56800147DD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		046B96D22007F56800147DD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046B96DC2007F56800147DD2 /* ViewController.swift in Sources */,
+				046B96DA2007F56800147DD2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046B96E62007F56800147DD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046B96EF2007F56800147DD2 /* OmniLiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046B96F12007F56800147DD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046B96FA2007F56800147DD2 /* OmniLiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		046B96EC2007F56800147DD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 046B96D52007F56800147DD2 /* OmniLift */;
+			targetProxy = 046B96EB2007F56800147DD2 /* PBXContainerItemProxy */;
+		};
+		046B96F72007F56800147DD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 046B96D52007F56800147DD2 /* OmniLift */;
+			targetProxy = 046B96F62007F56800147DD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		046B96DD2007F56800147DD2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				046B96DE2007F56800147DD2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		046B96E22007F56800147DD2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				046B96E32007F56800147DD2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		046B96FC2007F56800147DD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		046B96FD2007F56800147DD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		046B96FF2007F56800147DD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A67555672H;
+				INFOPLIST_FILE = OmniLift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.somethingclever.OmniLift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		046B97002007F56800147DD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A67555672H;
+				INFOPLIST_FILE = OmniLift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.somethingclever.OmniLift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		046B97022007F56800147DD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A67555672H;
+				INFOPLIST_FILE = OmniLiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.somethingclever.OmniLiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmniLift.app/OmniLift";
+			};
+			name = Debug;
+		};
+		046B97032007F56800147DD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A67555672H;
+				INFOPLIST_FILE = OmniLiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.somethingclever.OmniLiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmniLift.app/OmniLift";
+			};
+			name = Release;
+		};
+		046B97052007F56800147DD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A67555672H;
+				INFOPLIST_FILE = OmniLiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.somethingclever.OmniLiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OmniLift;
+			};
+			name = Debug;
+		};
+		046B97062007F56800147DD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A67555672H;
+				INFOPLIST_FILE = OmniLiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.somethingclever.OmniLiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OmniLift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		046B96D12007F56800147DD2 /* Build configuration list for PBXProject "OmniLift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046B96FC2007F56800147DD2 /* Debug */,
+				046B96FD2007F56800147DD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046B96FE2007F56800147DD2 /* Build configuration list for PBXNativeTarget "OmniLift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046B96FF2007F56800147DD2 /* Debug */,
+				046B97002007F56800147DD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046B97012007F56800147DD2 /* Build configuration list for PBXNativeTarget "OmniLiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046B97022007F56800147DD2 /* Debug */,
+				046B97032007F56800147DD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046B97042007F56800147DD2 /* Build configuration list for PBXNativeTarget "OmniLiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046B97052007F56800147DD2 /* Debug */,
+				046B97062007F56800147DD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 046B96CE2007F56800147DD2 /* Project object */;
+}
