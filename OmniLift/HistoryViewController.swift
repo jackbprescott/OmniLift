@@ -10,6 +10,12 @@
 import UIKit
 
 class HistoryViewController: UIViewController {
+    
+    // MARK: - Properties
+    
+    
+    
+    // MARK: - Setup
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +27,6 @@ class HistoryViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
