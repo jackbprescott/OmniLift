@@ -9,7 +9,11 @@
 import UIKit
 
 class WorkoutsTableViewCell: UITableViewCell {
-
+    
+    //MARK: - Properties
+    
+    @IBOutlet weak var workoutNameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
