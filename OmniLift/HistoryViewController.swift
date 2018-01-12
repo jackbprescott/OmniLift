@@ -9,25 +9,34 @@
 
 import UIKit
 
-class HistoryViewController: UIViewController {
+class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // MARK: - Properties
     
+    @IBOutlet weak var historyTableView: UITableView!
     
+    var workoutsHistoryList: [String] = ["Deadlift", "Squat", "Curls", "Kickbacks"]
     
     // MARK: - Setup
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        historyTableView.delegate = self
+        historyTableView.dataSource = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: - Table View Functions
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return workoutsHistoryList.count
     }
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = historyTableView.dequeueReusableCell(withIdentifier: "HistoryTableViewCell", for: indexPath) as! HistoryTableViewCell
+        cell.workoutNameLabel.text = workoutsHistoryList[indexPath.row]
+        return cell
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -9,6 +9,12 @@
 import UIKit
 
 class HistoryTableViewCell: UITableViewCell {
+    
+    // MARK: - Properties
+    
+    @IBOutlet weak var workoutNameLabel: UILabel!
+    
+    // MARK: - Setup
 
     override func awakeFromNib() {
         super.awakeFromNib()
