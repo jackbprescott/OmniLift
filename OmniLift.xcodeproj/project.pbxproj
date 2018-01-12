@@ -22,6 +22,9 @@
 		0487D1D9200820FA0018A33A /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D1D8200820FA0018A33A /* HistoryTableViewCell.swift */; };
 		0487D1DB2008211A0018A33A /* WorkoutsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D1DA2008211A0018A33A /* WorkoutsTableViewCell.swift */; };
 		0487D1DD2008213B0018A33A /* ViewWorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D1DC2008213B0018A33A /* ViewWorkoutTableViewCell.swift */; };
+		0487D1DF200936DA0018A33A /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D1DE200936DA0018A33A /* Workout.swift */; };
+		0487D1E1200938DA0018A33A /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D1E0200938DA0018A33A /* Group.swift */; };
+		0487D1E3200939210018A33A /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D1E2200939210018A33A /* Exercise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		0487D1D8200820FA0018A33A /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		0487D1DA2008211A0018A33A /* WorkoutsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsTableViewCell.swift; sourceTree = "<group>"; };
 		0487D1DC2008213B0018A33A /* ViewWorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWorkoutTableViewCell.swift; sourceTree = "<group>"; };
+		0487D1DE200936DA0018A33A /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		0487D1E0200938DA0018A33A /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		0487D1E2200939210018A33A /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,9 @@
 				0487D1D8200820FA0018A33A /* HistoryTableViewCell.swift */,
 				0487D1DA2008211A0018A33A /* WorkoutsTableViewCell.swift */,
 				0487D1DC2008213B0018A33A /* ViewWorkoutTableViewCell.swift */,
+				0487D1DE200936DA0018A33A /* Workout.swift */,
+				0487D1E0200938DA0018A33A /* Group.swift */,
+				0487D1E2200939210018A33A /* Exercise.swift */,
 				046B96E52007F56800147DD2 /* Info.plist */,
 			);
 			path = OmniLift;
@@ -286,13 +295,16 @@
 				0487D1CF20081EA00018A33A /* WorkoutsViewController.swift in Sources */,
 				0487D1CD20081E850018A33A /* HistoryViewController.swift in Sources */,
 				0487D1DB2008211A0018A33A /* WorkoutsTableViewCell.swift in Sources */,
+				0487D1E1200938DA0018A33A /* Group.swift in Sources */,
 				0487D1D9200820FA0018A33A /* HistoryTableViewCell.swift in Sources */,
 				0487D1D120081EF90018A33A /* CreateWorkoutViewController.swift in Sources */,
 				0487D1D720081FB60018A33A /* LogInViewController.swift in Sources */,
+				0487D1DF200936DA0018A33A /* Workout.swift in Sources */,
 				046B96DA2007F56800147DD2 /* AppDelegate.swift in Sources */,
 				0487D1D520081F190018A33A /* ViewWorkoutViewController.swift in Sources */,
 				0487D1DD2008213B0018A33A /* ViewWorkoutTableViewCell.swift in Sources */,
 				0487D1D320081F0A0018A33A /* LogWorkoutViewController.swift in Sources */,
+				0487D1E3200939210018A33A /* Exercise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

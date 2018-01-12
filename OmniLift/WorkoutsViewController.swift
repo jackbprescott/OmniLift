@@ -11,6 +11,7 @@ import UIKit
 class WorkoutsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //MARK: - Properties
+    
     @IBOutlet weak var workoutsTableView: UITableView!
     
     var workoutList: [String] = ["Workout 1", "Workout 2", "Workout 3"]
