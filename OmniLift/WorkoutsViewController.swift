@@ -14,8 +14,6 @@ class WorkoutsViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBOutlet weak var workoutsTableView: UITableView!
     
-    var workoutList: [String] = ["Workout 1", "Workout 2", "Workout 3"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         workoutsTableView.delegate = self
@@ -30,7 +28,7 @@ class WorkoutsViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = workoutsTableView.dequeueReusableCell(withIdentifier: "WorkoutsTableViewCell", for: indexPath) as! WorkoutsTableViewCell
-        cell.workoutNameLabel.text = workoutList[indexPath.row]
+        cell.workoutNameLabel.text = workoutList[indexPath.row].name
         return cell
     }
 

@@ -26,11 +26,11 @@ struct Group {
     
     // MARK: - Functions
     
-    func addExercise (_ exercise: String) {
+    mutating func addExercise (_ exercise: Exercise) {
         exercises.append(exercise)
     }
     
-    func setRepititions (_ reps: Int) {
+    mutating func setRepititions (_ reps: Int) {
         repititions = reps
     }
     

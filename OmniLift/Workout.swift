@@ -18,17 +18,17 @@ class Workout {
     
     // MARK: - Setup
     
-    init (name: String) {
+    init (_ name: String) {
         self.name = name
     }
     
     // MARK: - Functions
     
-    func addToCurrentGroup (_ exercise: String) {
+    func addToCurrentGroup (_ exercise: Exercise) {
         currentGroup.addExercise(exercise)
     }
     
-    func setCurrentGroupRepititions (_ reps) {
+    func setCurrentGroupRepititions (_ reps: Int) {
         currentGroup.setRepititions(reps)
     }
     

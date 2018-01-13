@@ -14,7 +14,7 @@ struct Exercise {
     // MARK: - Properties
     
     var name: String
-    var isTimed: boolean = false
+    var isTimed: Bool = false
     
     // MARK: - Setup
     
@@ -22,7 +22,7 @@ struct Exercise {
         self.name = name
     }
     
-    init (name: String, isTimed: boolean) {
+    init (name: String, isTimed: Bool) {
         self.name = name
         self.isTimed = isTimed
     }
