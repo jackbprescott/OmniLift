@@ -13,6 +13,7 @@ class CreateWorkoutViewController: UIViewController {
     // MARK: - Properties
     
     @IBOutlet weak var workoutNameTextField: UITextField!
+    @IBOutlet weak var doneButton: UIButton!
     
     // MARK: - Setup
 
@@ -24,11 +25,19 @@ class CreateWorkoutViewController: UIViewController {
 
     // MARK: - Actions
     
-    @IBAction func doneButtonAction(_ sender: UIButton) {
-        workoutList.append(Workout(workoutNameTextField.text ?? ""))
+    @IBAction func cancelButtonAction(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     
     // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let senderButton = sender as? UIButton {
+            if senderButton === doneButton, let workoutsViewController = segue.destination as? WorkoutsViewController {
+                workoutsViewController.workoutTypeList.append(WorkoutType(workoutNameTextField.text ?? ""))
+                workoutsViewController.workoutsTableView.reloadData()
+            }
+        }
+    }
 
 }

@@ -15,7 +15,8 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     @IBOutlet weak var historyTableView: UITableView!
     
-    var workoutsHistoryList: [String] = ["Deadlift", "Squat", "Curls", "Kickbacks"]
+    var workoutTypeList: [WorkoutType] = []
+    var workoutList: [Workout] = []
     
     // MARK: - Setup
 
@@ -28,23 +29,26 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     // MARK: - Table View Functions
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return workoutsHistoryList.count
+        return workoutList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = historyTableView.dequeueReusableCell(withIdentifier: "HistoryTableViewCell", for: indexPath) as! HistoryTableViewCell
-        cell.workoutNameLabel.text = workoutsHistoryList[indexPath.row]
+        cell.workoutNameLabel.text = workoutList[indexPath.row].type.name
         return cell
     }
     
-    /*
+    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    @IBAction func unwindToHistory(segue:UIStoryboardSegue) { }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let workoutsViewController = segue.destination as? WorkoutsViewController {
+            workoutsViewController.workoutTypeList = workoutTypeList
+            workoutsViewController.workoutList = workoutList
+        }
     }
-    */
+
 
 }
