@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Group {
+class Group {
         
     // MARK: - Properties
     
@@ -20,17 +20,21 @@ struct Group {
     init () {
     }
     
+    init (_ reps: Int) {
+        repititions = reps
+    }
+    
     init (exercises: [Exercise]) {
         self.exercises = exercises
     }
     
     // MARK: - Functions
     
-    mutating func addExercise (_ exercise: Exercise) {
+    func addExercise (_ exercise: Exercise) {
         exercises.append(exercise)
     }
     
-    mutating func setRepititions (_ reps: Int) {
+    func setRepititions (_ reps: Int) {
         repititions = reps
     }
     

@@ -12,11 +12,14 @@ class WorkoutType {
     
     // MARK: - Properties
     
-    var name: String
+    var name: String = ""
     var groups: [Group] = []
     var currentGroup: Group = Group()
     
     // MARK: - Setup
+    
+    init () {
+    }
     
     init (_ name: String) {
         self.name = name

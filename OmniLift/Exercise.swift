@@ -9,22 +9,23 @@
 import Foundation
 
 
-struct Exercise {
+class Exercise {
     
     // MARK: - Properties
     
-    var name: String
-    var isTimed: Bool = false
+    var name: String?
+    var repsLowerLimit: String?
+    var repsUpperLimit: String?
     
     // MARK: - Setup
     
-    init (name: String) {
-        self.name = name
+    init () {
     }
     
-    init (name: String, isTimed: Bool) {
+    init (name: String, lower: String, upper: String) {
         self.name = name
-        self.isTimed = isTimed
+        self.repsLowerLimit = lower
+        self.repsUpperLimit = upper
     }
     
 }
