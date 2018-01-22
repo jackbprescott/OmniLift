@@ -45,6 +45,10 @@ class WorkoutsViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "LogWorkoutSegue", sender: workoutTypeList[indexPath.row])
+    }
+    
     // MARK: - Actions
     
     @IBAction func backButtonAction(_ sender: UIButton) {
@@ -58,6 +62,8 @@ class WorkoutsViewController: UIViewController, UITableViewDelegate, UITableView
         // Get the new view controller using segue.destinationViewController.
         if let historyViewController = segue.destination as? HistoryViewController {
             historyViewController.workoutTypeList = workoutTypeList
+        } else if let logWorkoutViewController = segue.destination as? LogWorkoutViewController, let type = sender as? WorkoutType {
+            logWorkoutViewController.newWorkout = Workout(type)
         }
     }
 

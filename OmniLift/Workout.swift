@@ -13,6 +13,8 @@ class Workout {
     // MARK: - Properties
     
     var type: WorkoutType
+    var reps: [Int] = []
+    var weight: [Int] = []
     
     // MARK: - Setup
     

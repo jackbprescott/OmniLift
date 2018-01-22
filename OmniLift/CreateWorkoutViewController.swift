@@ -13,7 +13,7 @@ class CreateWorkoutViewController: UIViewController, UIPickerViewDelegate, UIPic
     // MARK: - Properties
     
     @IBOutlet weak var workoutNameTextField: UITextField!
-    @IBOutlet weak var doneButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var repititionPickerView: UIPickerView!
     @IBOutlet weak var addExerciseToGroupButton: UIButton!
     @IBOutlet weak var createWorkoutTableView: UITableView!
@@ -40,7 +40,7 @@ class CreateWorkoutViewController: UIViewController, UIPickerViewDelegate, UIPic
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func doneButtonAction(_ sender: UIButton) {
+    @IBAction func saveButtonAction(_ sender: UIButton) {
         if workoutNameTextField.text != "" {
             performSegue(withIdentifier: "unwindToWorkoutsSegue", sender: sender)
         }
@@ -145,7 +145,7 @@ class CreateWorkoutViewController: UIViewController, UIPickerViewDelegate, UIPic
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let senderButton = sender as? UIButton {
-            if senderButton === doneButton, let workoutsViewController = segue.destination as? WorkoutsViewController {
+            if senderButton === saveButton, let workoutsViewController = segue.destination as? WorkoutsViewController {
                 let newWorkoutType: WorkoutType = WorkoutType(workoutNameTextField.text!)
                 newWorkoutType.groups = groupList
                 workoutsViewController.workoutTypeList.append(newWorkoutType)
