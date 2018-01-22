@@ -13,13 +13,17 @@ class Workout {
     // MARK: - Properties
     
     var type: WorkoutType
-    var reps: [Int] = []
-    var weight: [Int] = []
+    var repsAndWeightData: [IndexPath: [String]] = [:] // IndexPath: [weights, reps]
     
     // MARK: - Setup
     
     init (_ type: WorkoutType) {
         self.type = type
+        for i in 0 ..< type.groups.count {
+            for j in 0 ..< type.groups[i].repititions * type.groups[i].exercises.count {
+                repsAndWeightData[IndexPath(row: j, section: i)] = ["", ""]
+            }
+        }
     }
     
 }

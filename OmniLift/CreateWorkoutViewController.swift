@@ -123,8 +123,8 @@ class CreateWorkoutViewController: UIViewController, UIPickerViewDelegate, UIPic
         cell.nameTextField.text = exerciseMatrix[indexPath.section][indexPath.row].name
         cell.repsLowerLimitTextField.text = exerciseMatrix[indexPath.section][indexPath.row].repsLowerLimit
         cell.repsUpperLimitTextField.text = exerciseMatrix[indexPath.section][indexPath.row].repsUpperLimit
-        cell.nameTextField.delegate = self
         
+        cell.nameTextField.delegate = self
         cell.repsLowerLimitTextField.delegate = self
         cell.repsUpperLimitTextField.delegate = self
         
@@ -147,6 +147,9 @@ class CreateWorkoutViewController: UIViewController, UIPickerViewDelegate, UIPic
         if let senderButton = sender as? UIButton {
             if senderButton === saveButton, let workoutsViewController = segue.destination as? WorkoutsViewController {
                 let newWorkoutType: WorkoutType = WorkoutType(workoutNameTextField.text!)
+                for i in 0..<groupList.count {
+                    groupList[i].exercises = exerciseMatrix[i]
+                }
                 newWorkoutType.groups = groupList
                 workoutsViewController.workoutTypeList.append(newWorkoutType)
                 workoutsViewController.workoutsTableView.reloadData()
