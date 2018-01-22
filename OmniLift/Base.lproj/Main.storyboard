@@ -280,7 +280,7 @@
                                 </constraints>
                                 <state key="normal" title="Done"/>
                                 <connections>
-                                    <segue destination="zkU-cE-SVH" kind="unwind" unwindAction="unwindToWorkoutsWithSegue:" id="BSn-Xg-gjX"/>
+                                    <action selector="doneButtonAction:" destination="mol-ZY-uzd" eventType="touchUpInside" id="Qin-5w-wLS"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ub-TG-Bcz">
@@ -423,6 +423,7 @@
                         <outlet property="doneButton" destination="EnG-Io-pbP" id="Zkg-Rw-jOO"/>
                         <outlet property="repititionPickerView" destination="gya-7m-gZr" id="Fr4-xw-E2E"/>
                         <outlet property="workoutNameTextField" destination="o36-bS-jxC" id="GaJ-DX-VgJ"/>
+                        <segue destination="zkU-cE-SVH" kind="unwind" identifier="unwindToWorkoutsSegue" unwindAction="unwindToWorkoutsWithSegue:" id="oK6-kB-cip"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3n-b7-GhE" userLabel="First Responder" sceneMemberID="firstResponder"/>

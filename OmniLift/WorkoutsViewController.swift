@@ -21,12 +21,22 @@ class WorkoutsViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         workoutsTableView.delegate = self
         workoutsTableView.dataSource = self
+        workoutsTableView.allowsMultipleSelectionDuringEditing = true
     }
     
     // MARK: - Table View Functions
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return workoutTypeList.count
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        workoutTypeList.remove(at: indexPath.row)
+        workoutsTableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.fade)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

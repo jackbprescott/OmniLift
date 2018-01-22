@@ -22,8 +22,6 @@ class CreateWorkoutViewController: UIViewController, UIPickerViewDelegate, UIPic
     var exerciseMatrix: [[Exercise]] = []
     var tags:[String] = []
     
-    let newWorkoutType: WorkoutType = WorkoutType()
-    
     // MARK: - Setup
 
     override func viewDidLoad() {
@@ -40,6 +38,15 @@ class CreateWorkoutViewController: UIViewController, UIPickerViewDelegate, UIPic
     
     @IBAction func cancelButtonAction(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func doneButtonAction(_ sender: UIButton) {
+        if workoutNameTextField.text != "" {
+            performSegue(withIdentifier: "unwindToWorkoutsSegue", sender: sender)
+        }
+        let addWorkoutNameAlert = UIAlertController(title: "Please add a workout name", message: nil, preferredStyle: .alert)
+        addWorkoutNameAlert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: nil))
+        present(addWorkoutNameAlert, animated: true, completion: nil)
     }
     
     @IBAction func newGroupAction(_ sender: UIButton) {
@@ -59,20 +66,6 @@ class CreateWorkoutViewController: UIViewController, UIPickerViewDelegate, UIPic
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        
-        let indexPath = String(textField.tag).components(separatedBy: "10001")
-        let section: Int = Int(indexPath[1])!
-        let row: Int = Int(indexPath[2])!
-        let type: Int = Int(indexPath[0])!
-        
-        if type == 1 {
-            exerciseMatrix[section][row].name = textField.text
-        } else if type == 2 {
-            exerciseMatrix[section][row].repsLowerLimit = textField.text
-        } else {
-            exerciseMatrix[section][row].repsUpperLimit = textField.text
-        }
-        
         return true
     }
     
@@ -153,7 +146,9 @@ class CreateWorkoutViewController: UIViewController, UIPickerViewDelegate, UIPic
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let senderButton = sender as? UIButton {
             if senderButton === doneButton, let workoutsViewController = segue.destination as? WorkoutsViewController {
-                workoutsViewController.workoutTypeList.append(WorkoutType(workoutNameTextField.text ?? ""))
+                let newWorkoutType: WorkoutType = WorkoutType(workoutNameTextField.text!)
+                newWorkoutType.groups = groupList
+                workoutsViewController.workoutTypeList.append(newWorkoutType)
                 workoutsViewController.workoutsTableView.reloadData()
             }
         }
