@@ -278,7 +278,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="37" id="8wq-ug-TmR"/>
                                 </constraints>
-                                <state key="normal" title="Done"/>
+                                <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="doneButtonAction:" destination="mol-ZY-uzd" eventType="touchUpInside" id="Qin-5w-wLS"/>
                                 </connections>
