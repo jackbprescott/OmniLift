@@ -17,6 +17,8 @@ class LogWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var finishButton: UIButton!
     
     var newWorkout: Workout?
+    var workoutTypeList: [WorkoutType] = []
+    var workoutList: [Workout] = []
     
     // MARK: - Setup
     
@@ -79,9 +81,6 @@ class LogWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
         let moduloOfRow = indexPath.row % newWorkout!.type.groups[indexPath.section].exercises.count
         
         cell.exerciseNameLabel.text = newWorkout!.type.groups[indexPath.section].exercises[moduloOfRow].name
-        print(indexPath.row)
-        print(indexPath.section)
-        print()
         if newWorkout!.repsAndWeightData[indexPath]![0] != "" {
             cell.weightTextField.text = newWorkout!.repsAndWeightData[indexPath]![0]
         }
@@ -109,7 +108,10 @@ class LogWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let senderButton = sender as? UIButton {
             if senderButton === finishButton, let historyViewController = segue.destination as? HistoryViewController {
-                historyViewController.workoutList.append(newWorkout!)
+                newWorkout!.endWorkout()
+                workoutList.insert(newWorkout!, at: 0)
+                historyViewController.workoutList = workoutList
+                historyViewController.workoutTypeList = workoutTypeList
                 historyViewController.historyTableView.reloadData()
             }
         }

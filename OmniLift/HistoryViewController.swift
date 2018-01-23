@@ -26,6 +26,12 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         historyTableView.dataSource = self
     }
     
+    // MARK: - Actions
+    
+    @IBAction func logOutButtonAction(_ sender: UIButton) {
+        performSegue(withIdentifier: "UnwindToLogInFromHistory", sender: nil)
+    }
+    
     // MARK: - Table View Functions
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041C62512017B279007D02AD /* ViewWorkoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C62502017B279007D02AD /* ViewWorkoutCollectionViewCell.swift */; };
 		045F87142013F57300E56FDA /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F87132013F57300E56FDA /* ViewControllerExtension.swift */; };
 		046B96DA2007F56800147DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B96D92007F56800147DD2 /* AppDelegate.swift */; };
 		046B96DF2007F56800147DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046B96DD2007F56800147DD2 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041C62502017B279007D02AD /* ViewWorkoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWorkoutCollectionViewCell.swift; sourceTree = "<group>"; };
 		045F87132013F57300E56FDA /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		046B96D62007F56800147DD2 /* OmniLift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmniLift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046B96D92007F56800147DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				0487D1D8200820FA0018A33A /* HistoryTableViewCell.swift */,
 				0487D1DA2008211A0018A33A /* WorkoutsTableViewCell.swift */,
 				0487D1DC2008213B0018A33A /* ViewWorkoutTableViewCell.swift */,
+				041C62502017B279007D02AD /* ViewWorkoutCollectionViewCell.swift */,
 				04E2FFD72013DF970050B5B1 /* CreateWorkoutTableViewCell.swift */,
 				04DB90A3201641CA007F209B /* LogWorkoutTableViewCell.swift */,
 				04E2FFD32013C0D90050B5B1 /* Workout.swift */,
@@ -309,6 +312,7 @@
 				0487D1DB2008211A0018A33A /* WorkoutsTableViewCell.swift in Sources */,
 				0487D1E1200938DA0018A33A /* Group.swift in Sources */,
 				0487D1D9200820FA0018A33A /* HistoryTableViewCell.swift in Sources */,
+				041C62512017B279007D02AD /* ViewWorkoutCollectionViewCell.swift in Sources */,
 				04E2FFD82013DF970050B5B1 /* CreateWorkoutTableViewCell.swift in Sources */,
 				0487D1D120081EF90018A33A /* CreateWorkoutViewController.swift in Sources */,
 				0487D1D720081FB60018A33A /* LogInViewController.swift in Sources */,

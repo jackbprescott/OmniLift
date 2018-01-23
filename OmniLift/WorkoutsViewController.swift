@@ -22,6 +22,7 @@ class WorkoutsViewController: UIViewController, UITableViewDelegate, UITableView
         workoutsTableView.delegate = self
         workoutsTableView.dataSource = self
         workoutsTableView.allowsMultipleSelectionDuringEditing = true
+        workoutsTableView.reloadData()
     }
     
     // MARK: - Table View Functions
@@ -64,6 +65,8 @@ class WorkoutsViewController: UIViewController, UITableViewDelegate, UITableView
             historyViewController.workoutTypeList = workoutTypeList
         } else if let logWorkoutViewController = segue.destination as? LogWorkoutViewController, let type = sender as? WorkoutType {
             logWorkoutViewController.newWorkout = Workout(type)
+            logWorkoutViewController.workoutList = workoutList
+            logWorkoutViewController.workoutTypeList = workoutTypeList
         }
     }
 
