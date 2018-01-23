@@ -16,7 +16,7 @@ class Workout {
     var repsAndWeightData: [IndexPath: [String]] = [:] // IndexPath: [weights, reps]
     var date: String
     var startSecondsSince1970: Int
-    var workoutTime: String = ""
+    var time: String = ""
     
     // MARK: - Setup
     
@@ -54,12 +54,12 @@ class Workout {
         }
         
         if workoutHours == "0" {
-            workoutTime = workoutMins + ":" + workoutSecs
+            time = workoutMins + ":" + workoutSecs
         } else {
             if workoutMins.count == 1 {
                 workoutMins = "0" + workoutMins
             }
-            workoutTime = workoutHours + ":" + workoutMins + ":" + workoutSecs
+            time = workoutHours + ":" + workoutMins + ":" + workoutSecs
         }
     }
     

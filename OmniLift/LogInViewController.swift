@@ -26,6 +26,8 @@ class LogInViewController: UIViewController {
         let workout1 = Workout(workoutType1)
         let workout2 = Workout(workoutType3)
         let workout3 = Workout(workoutType2)
+        workout1.date = "04/20/1998"
+        workout1.time = "1:42:35"
         workoutList = [workout1, workout2, workout3]
     }
     

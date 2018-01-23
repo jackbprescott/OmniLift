@@ -44,6 +44,9 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "HistoryToViewWorkout", sender: workoutList[indexPath.row])
+    }
     
     // MARK: - Navigation
     
