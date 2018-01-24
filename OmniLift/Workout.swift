@@ -13,7 +13,7 @@ class Workout {
     // MARK: - Properties
     
     var type: WorkoutType
-    var repsAndWeightData: [IndexPath: [String]] = [:] // IndexPath: [weights, reps]
+    var repsAndWeightData: [[[String]]] = []
     var date: String
     var startSecondsSince1970: Int
     var time: String = ""
@@ -23,8 +23,9 @@ class Workout {
     init (_ type: WorkoutType) {
         self.type = type
         for i in 0 ..< type.groups.count {
-            for j in 0 ..< type.groups[i].repititions * type.groups[i].exercises.count {
-                repsAndWeightData[IndexPath(row: j, section: i)] = ["", ""]
+            repsAndWeightData.append([])
+            for _ in 0 ..< type.groups[i].repititions * type.groups[i].exercises.count {
+                repsAndWeightData[i].append(["", ""])
             }
         }
         let unformattedDate = Date()

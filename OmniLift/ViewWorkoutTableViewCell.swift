@@ -10,6 +10,14 @@ import UIKit
 
 class ViewWorkoutTableViewCell: UITableViewCell {
 
+    // MARK: - Properties
+    
+    @IBOutlet weak var exerciseNameLabel: UILabel!
+    @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var repsLabel: UILabel!
+    
+    // MARK: - Setup
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,7 +26,6 @@ class ViewWorkoutTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
 
 }

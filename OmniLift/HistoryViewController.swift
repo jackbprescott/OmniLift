@@ -56,6 +56,9 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         if let workoutsViewController = segue.destination as? WorkoutsViewController {
             workoutsViewController.workoutTypeList = workoutTypeList
             workoutsViewController.workoutList = workoutList
+        } else if let viewWorkoutViewController = segue.destination as? ViewWorkoutViewController {
+            viewWorkoutViewController.workout = sender as? Workout
+            viewWorkoutViewController.workoutList = workoutList
         }
     }
 

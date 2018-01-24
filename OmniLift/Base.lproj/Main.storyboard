@@ -250,29 +250,40 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exercise Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLf-Ad-rO7">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Exercise Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLf-Ad-rO7">
                                                     <rect key="frame" x="15" y="11" width="345" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XX lbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMa-jF-tVJ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XX lbs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMa-jF-tVJ">
                                                     <rect key="frame" x="15" y="40" width="50" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XX Reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2F-Kg-snZ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XX Reps" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2F-Kg-snZ">
                                                     <rect key="frame" x="89" y="40" width="65" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cLf-Ad-rO7" firstAttribute="centerX" secondItem="1Ow-fj-nYD" secondAttribute="centerX" id="7lY-Yy-Ytg"/>
+                                                <constraint firstItem="BMa-jF-tVJ" firstAttribute="top" secondItem="cLf-Ad-rO7" secondAttribute="bottom" constant="8" symbolic="YES" id="8J0-ew-frW"/>
+                                                <constraint firstItem="cLf-Ad-rO7" firstAttribute="top" secondItem="1Ow-fj-nYD" secondAttribute="topMargin" constant="-20" id="9BL-dc-88v"/>
+                                                <constraint firstItem="cLf-Ad-rO7" firstAttribute="leading" secondItem="1Ow-fj-nYD" secondAttribute="leadingMargin" constant="-1" id="F2E-sL-Hbd"/>
+                                                <constraint firstItem="c2F-Kg-snZ" firstAttribute="leading" secondItem="BMa-jF-tVJ" secondAttribute="trailing" constant="24" id="egO-dQ-FoZ"/>
+                                                <constraint firstItem="cLf-Ad-rO7" firstAttribute="leading" secondItem="BMa-jF-tVJ" secondAttribute="leading" id="jwD-QK-j08"/>
+                                                <constraint firstItem="BMa-jF-tVJ" firstAttribute="baseline" secondItem="c2F-Kg-snZ" secondAttribute="baseline" id="lL9-0A-mZO"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="exerciseNameLabel" destination="cLf-Ad-rO7" id="trs-B4-WYQ"/>
+                                            <outlet property="repsLabel" destination="c2F-Kg-snZ" id="89w-XX-SZy"/>
+                                            <outlet property="weightLabel" destination="BMa-jF-tVJ" id="zti-h9-WXR"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -283,7 +294,16 @@
                                     <constraint firstAttribute="width" constant="34" id="ibS-Jj-QO7"/>
                                 </constraints>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="jEq-c8-ml0" eventType="touchUpInside" id="dpS-GV-hf3"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Workout Name MM/DD/YYYY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJl-ng-sKo">
+                                <rect key="frame" x="61" y="32" width="252" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="B0L-1M-Qs7">
                                 <rect key="frame" x="0.0" y="619" width="375" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -291,30 +311,33 @@
                                     <constraint firstAttribute="height" constant="48" id="vgf-5i-5Ra"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="4" minimumInteritemSpacing="4" id="xxK-0k-6ZC">
-                                    <size key="itemSize" width="127" height="40"/>
+                                    <size key="itemSize" width="119" height="40"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="4" minY="4" maxX="4" maxY="4"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ViewWorkoutCollectionViewCell" id="M6E-Gw-xvp" customClass="ViewWorkoutCollectionViewCell" customModule="OmniLift" customModuleProvider="target">
-                                        <rect key="frame" x="4" y="4" width="127" height="40"/>
+                                        <rect key="frame" x="4" y="4" width="119" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="127" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="119" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MM/DD/YYYY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbR-CB-zVe">
-                                                    <rect key="frame" x="10" y="10" width="106" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MM/DD/YYYY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbR-CB-zVe">
+                                                    <rect key="frame" x="6" y="10" width="106" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="MbR-CB-zVe" firstAttribute="centerY" secondItem="M6E-Gw-xvp" secondAttribute="centerY" id="AsL-AS-SJf"/>
+                                            <constraint firstItem="MbR-CB-zVe" firstAttribute="centerX" secondItem="M6E-Gw-xvp" secondAttribute="centerX" id="Ihn-oQ-chf"/>
+                                        </constraints>
                                         <connections>
-                                            <outlet property="workoutTimeStampLabel" destination="MbR-CB-zVe" id="7B8-Yc-7lj"/>
+                                            <outlet property="dateLabel" destination="MbR-CB-zVe" id="zVF-Nj-CMg"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -325,16 +348,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Workout Name MM/DD/YYYY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJl-ng-sKo">
-                                <rect key="frame" x="61" y="32" width="252" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TiY-c2-2en">
+                                <rect key="frame" x="0.0" y="618" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="TiY-c2-2en" firstAttribute="leading" secondItem="B0L-1M-Qs7" secondAttribute="leading" id="5eY-QJ-a37"/>
+                            <constraint firstItem="B0L-1M-Qs7" firstAttribute="top" secondItem="TiY-c2-2en" secondAttribute="bottom" id="7XT-is-96T"/>
+                            <constraint firstItem="TiY-c2-2en" firstAttribute="bottom" secondItem="OCW-a9-TcD" secondAttribute="bottom" id="K3p-h9-eSI"/>
                             <constraint firstItem="OoU-4h-NaM" firstAttribute="top" secondItem="t8P-v9-KSY" secondAttribute="top" constant="7" id="Kft-yx-5S4"/>
+                            <constraint firstItem="TiY-c2-2en" firstAttribute="top" secondItem="MOe-Em-m6t" secondAttribute="top" constant="618" id="LJb-yv-uJ8"/>
                             <constraint firstItem="B0L-1M-Qs7" firstAttribute="bottom" secondItem="t8P-v9-KSY" secondAttribute="bottom" id="Ml5-wz-e0o"/>
                             <constraint firstItem="OoU-4h-NaM" firstAttribute="leading" secondItem="t8P-v9-KSY" secondAttribute="leading" constant="16" id="Nbj-gq-e8A"/>
                             <constraint firstItem="2Uk-9L-Ofn" firstAttribute="top" secondItem="fJl-ng-sKo" secondAttribute="bottom" constant="8" id="PGg-3z-JXI"/>
@@ -343,15 +368,25 @@
                             <constraint firstItem="OCW-a9-TcD" firstAttribute="leading" secondItem="t8P-v9-KSY" secondAttribute="leading" id="g5C-zZ-3qT"/>
                             <constraint firstItem="2Uk-9L-Ofn" firstAttribute="centerX" secondItem="MOe-Em-m6t" secondAttribute="centerX" id="lCf-Yz-AUh"/>
                             <constraint firstItem="fJl-ng-sKo" firstAttribute="centerX" secondItem="MOe-Em-m6t" secondAttribute="centerX" id="mXu-5P-rfR"/>
-                            <constraint firstItem="B0L-1M-Qs7" firstAttribute="top" secondItem="OCW-a9-TcD" secondAttribute="bottom" id="qki-1Z-Y3q"/>
+                            <constraint firstItem="TiY-c2-2en" firstAttribute="trailing" secondItem="B0L-1M-Qs7" secondAttribute="trailing" id="nxt-gs-xLc"/>
                             <constraint firstItem="B0L-1M-Qs7" firstAttribute="leading" secondItem="t8P-v9-KSY" secondAttribute="leading" id="tFV-62-g6u"/>
                             <constraint firstItem="OCW-a9-TcD" firstAttribute="trailing" secondItem="t8P-v9-KSY" secondAttribute="trailing" id="xR8-v9-XRK"/>
                             <constraint firstItem="fJl-ng-sKo" firstAttribute="top" secondItem="t8P-v9-KSY" secondAttribute="top" constant="12" id="zMo-KM-4bZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="t8P-v9-KSY"/>
                     </view>
+                    <connections>
+                        <outlet property="ViewWorkoutCollectionView" destination="B0L-1M-Qs7" id="HmS-Dg-o0q"/>
+                        <outlet property="ViewWorkoutTableView" destination="OCW-a9-TcD" id="U3F-do-dOv"/>
+                        <outlet property="lengthLabel" destination="2Uk-9L-Ofn" id="CaK-ZP-3rN"/>
+                        <outlet property="nameAndDateLabel" destination="fJl-ng-sKo" id="XGF-0J-kyx"/>
+                        <outlet property="viewWorkoutCollectionView" destination="B0L-1M-Qs7" id="A9U-EQ-qSJ"/>
+                        <outlet property="viewWorkoutTableView" destination="OCW-a9-TcD" id="Xog-bl-KXk"/>
+                        <segue destination="J8q-M2-C97" kind="unwind" identifier="UnwindFromViewWorkoutToHistory" unwindAction="unwindToHistoryWithSegue:" id="aZL-dY-WGO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mTU-VJ-0SK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="J8q-M2-C97" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-2866.4000000000001" y="-1621.4392803598203"/>
         </scene>

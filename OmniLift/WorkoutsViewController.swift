@@ -47,6 +47,7 @@ class WorkoutsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         performSegue(withIdentifier: "LogWorkoutSegue", sender: workoutTypeList[indexPath.row])
     }
     

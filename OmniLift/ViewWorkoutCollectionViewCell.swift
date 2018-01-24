@@ -10,6 +10,6 @@ import UIKit
 
 class ViewWorkoutCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var workoutTimeStampLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     
 }

@@ -56,9 +56,9 @@ class LogWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
         let path: IndexPath = IndexPath(row: Int(indexPathComponents[2])!, section: Int(indexPathComponents[1])!)
         
         if type == 1 {
-            newWorkout!.repsAndWeightData[path]![0] = textField.text!
+            newWorkout!.repsAndWeightData[path.section][path.row][0] = textField.text!
         } else if type == 2  {
-            newWorkout!.repsAndWeightData[path]![1] = textField.text!
+            newWorkout!.repsAndWeightData[path.section][path.row][1] = textField.text!
         }
     }
     
@@ -73,7 +73,7 @@ class LogWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Group " + String(section)
+        return "Group " + String(section + 1)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -81,12 +81,12 @@ class LogWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
         let moduloOfRow = indexPath.row % newWorkout!.type.groups[indexPath.section].exercises.count
         
         cell.exerciseNameLabel.text = newWorkout!.type.groups[indexPath.section].exercises[moduloOfRow].name
-        if newWorkout!.repsAndWeightData[indexPath]![0] != "" {
-            cell.weightTextField.text = newWorkout!.repsAndWeightData[indexPath]![0]
+        if newWorkout!.repsAndWeightData[indexPath.section][indexPath.row][0] != "" {
+            cell.weightTextField.text = newWorkout!.repsAndWeightData[indexPath.section][indexPath.row][0]
         }
         
-        if newWorkout!.repsAndWeightData[indexPath]![1] != "" {
-            cell.repsTextField.text = newWorkout!.repsAndWeightData[indexPath]![1]
+        if newWorkout!.repsAndWeightData[indexPath.section][indexPath.row][1] != "" {
+            cell.repsTextField.text = newWorkout!.repsAndWeightData[indexPath.section][indexPath.row][1]
         }
         
         cell.weightTextField.delegate = self
